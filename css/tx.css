@@ -1,0 +1,435 @@
+*{
+	padding:0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height:100%;
+}
+html{
+	overflow-y: auto;
+}
+body{
+	text-shadow: 0 1px 0 black,0 0 5px black;
+}
+.topbar{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:150px;
+	/*z-index:900;*/
+}
+/*顶部导航栏*/
+
+.toppic{
+	max-width: 1170px;
+	min-width:980px;
+	width:80%;
+	height:75px;
+	margin:0 auto;
+}
+.topside{
+	width:59%;
+	float:left;
+}
+.topTool{
+	float:right;
+	font-size: 0.875em;
+	width:320px;
+}
+.logoLink{
+	float:left;
+	display: block;
+	width:106px;
+	height:0;
+	padding-top: 76px;
+	/*用padding将盒子撑高*/
+	overflow:hidden;
+	background:url(../tengxunimages/imlogo_b.png) no-repeat left 15px;
+}
+.topNav{
+	float:left;
+	width: 450px;
+	padding-left:18px;
+}
+.topNav li{
+	float:left;
+	margin-left:20px;
+}
+.topNav li a{
+	float:left;
+	line-height: 75px;
+	padding:0 20px;
+	font-size: 1.125em;
+}
+.current{
+	background-color: #12b7f5;	
+}
+
+/*
+	a:hover;权重：a=0，b=1，c=1;
+	.cover;权重：a=0,b=1,c=0;
+ */
+.toppic a:link, .toppic a:visited{
+	color:#333;
+}
+.topTool a.barzc{
+	text-align: center;
+	color:#fff;
+	overflow: hidden;
+	line-height: 39px;
+	float:left;
+	padding-top:39px;
+	height:0;
+	margin-top:18px;
+	width:96px;
+	background:transparent url(../tengxunimages/icons.png) no-repeat 0 -244px;
+}
+.topTool ul{
+	float:right;
+	padding-top:6px;
+	height:40px;
+}
+.topTool li{
+	margin-left:30px;
+	line-height:40px;
+	float:right;
+	position: relative;
+}
+.topTool li a{
+
+}
+.flashData{
+	float:right;
+	line-height: 17px;
+	text-align: right;
+	letter-spacing: 0.04em;
+	/*
+		利用line-height设置所在高度
+		设置字符之间空隙
+	 */
+}
+/*中间部分*/
+.crossbanenr{
+	max-width: 1900px;
+    min-width: 960px;
+    margin: 0 auto;
+	width:100%;
+	height:490px;
+	padding-top:3%;
+}
+.wrap{
+	background-color: #fff;
+}
+.wrap img{
+	width:100%;
+}
+.crossbanenr ul{
+	max-width: 1900px;
+    min-width: 960px;
+    /*设置最小宽度及最大宽度*/
+    margin: 0 auto;
+	width:100%
+}
+.crossbanenr ul li,.crossbanenr ul li a{
+	margin:0 auto;
+	margin-bottom:25px;
+}
+.TIM_wenzi{
+	width:297px;
+	height:167px;
+	background:url(../tengxunimages/logo.png);
+}
+.tim_btn a{
+	display: block;
+	width: 328px;
+    background: url(../tengxunimages/btn.png) no-repeat center;
+    height: 72px;
+}
+.tim_btn{
+	margin-bottom:5% !important;
+}
+.tim_icon{
+	width: 820px;
+    height: 150px;
+    background: url("../tengxunimages/icon.png") no-repeat center;	
+}
+/* 中间主题部分*/
+/* 有文字，但不展示，而是用背景图时， 使用padding，height=0，overflow：hidden 挡住文字*/
+/* 没有文字，设置背景及宽高 */
+.content{
+	position: relative;
+}
+.content h1{
+	overflow:hidden;
+	padding-top:280px;
+	height:0;
+	background:#fff url(../tengxunimages/brand.png) no-repeat center top;
+}
+.firstImg{
+	background-position: 50% 6.23333px;
+	background:#fff;
+	width:100%;
+	height:600px;
+	background-attachment: fixed;
+	/*设置背景图片自适应*/
+	/*background-position: center 0;*/
+	/*position: relative;*/
+	background:url(../tengxunimages/fisrtbg.jpg) no-repeat;
+}
+.qcall{
+	width:100%;
+	height:584px;
+	background:#fff;
+}
+.qw960{
+	position: relative;
+	width:960px;
+	height:584px;
+	margin:0 auto;
+}
+.txtwrap{
+	position:absolute;
+	width:487px;
+	top:115px;
+	right:7px;
+	/*height:px;*/
+
+}
+.txtwrap h2{
+	width:100%;
+	background:url(../tengxunimages/qcall_txt.png) no-repeat left bottom;
+	height:0;
+	padding-top:135px;
+	overflow: hidden;
+}
+.txtwrap p{
+	text-align: right;
+	width:100%;
+	opacity: 0.6;
+	margin-bottom: 12px;
+	line-height: 25px;
+	letter-spacing: 0.12em;
+}
+.txtwrap p a{
+	color:#12b7f5;
+}
+.qcallAnimate{
+	background:url(../tengxunimages/pic1.png) no-repeat 0 0;
+	width:664px;
+	position:absolute;
+	bottom:0;
+	left:-32px;
+	height: 763px;
+}
+.figs{
+	padding-top:44px;
+	min-height: 77px;
+	width:100%;
+	background:url(../tengxunimages/qcall_figs.png) no-repeat 190px 41px;
+}
+.figs li{
+	font-size: 14px;
+	color:#a0a0a0;
+	padding-top:56px;
+	float:right;
+	text-align: center;
+	border-left:1px solid #e9e9e9;
+}
+.figs .f01{
+	text-align: right;
+	width:90px;
+}
+.figs .f02{
+	width:100px;
+}
+.figs .f03{
+	border:none;
+	width:154px;
+}
+.secondbg{
+	width:100%;
+	height:600px;
+	background:url(../tengxunimages/avd.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: 50% -8.9px;
+}
+.qfigure{
+	width:100%;
+	height:584px;
+	background:#fff;
+}
+.qfigure .txtwrap{
+	left:7px;
+	width:450px;
+}
+.qfigure .txtwrap h2{
+	background:url(../tengxunimages/txt.png) no-repeat;
+}
+.qfigure .txtwrap p{
+	width:90%;
+	text-align: left;
+	font-size: 18px;
+}
+.qfigure .txtwrap .figs{
+	background:transparent url(../tengxunimages/qfile_figs.png) no-repeat 7px 41px;
+}
+.qfigure .figs li{
+	float:left;
+}
+.qfigure .figs .f01{
+	text-indent: 3px;
+    text-align: left;
+    width: 90px;
+}
+.qfigure .figs .f02{
+	width: 113px;
+}
+.qfigure .figs .f03{
+	width: 110px;
+}
+.qfileAnimate{
+	position: absolute;
+	right:-100px;
+	bottom:104px;
+	width:597px;
+	height:330px;
+	background:transparent url(../tengxunimages/pic2.png) no-repeat 0 0;
+}
+.thirdbg{
+	background:#fff;
+	background:url(../tengxunimages/blog.jpg) no-repeat 0 0;
+	width:100%;
+	height:600px;
+	background-attachment: fixed;
+}
+.qblog{
+	width: 100%;
+	height:584px;
+	background:#fff;
+}
+.qblog .txtwrap{
+	position:absolute;
+	width:487px;
+	top:115px;
+	right:7px;
+	left:initial;
+	/*height:px;*/
+}
+.qblog .txtwrap h2{
+	width:100%;
+	padding-top:135px;
+	background:transparent url(../tengxunimages/qblog_txt.png) no-repeat 0 0;
+	margin:0;
+}
+.qblog .txtwrap p{
+	text-align: right;
+    width: 100%;
+}
+.qblog .txtwrap .figs{
+	background:url(../tengxunimages/qblog_figs.png) no-repeat 218px 41px;
+}
+.qblog .figs li{
+	float:right;
+}
+.qblog .figs .f01{
+	text-align: right;
+	width:79px;
+}
+.qblog .figs .f02{
+	width:107px;
+}
+.qblogAnimate{
+	position: absolute;
+	left:88px;
+	bottom:0;
+	background:transparent url(../tengxunimages/pic3.png) no-repeat -30px 0;
+	width: 344px;
+	height:506px;
+}
+/*底部*/
+.newfoot{
+	color:#666;
+	padding-top:34px;
+	width: 100%;
+	height:348px;
+	background-color:#2a2a2a;
+}
+.qmaps{
+	width:960px;
+	height:205px;
+	margin:0 auto;
+}
+.plats{
+	width:510px;
+	padding-left:8px;
+	float:left;
+}
+.plats h3{
+	height: 50px;
+	font-size: 14px;
+}
+.plats a{
+	color:#979797;
+	padding-top:65px;
+	float:left;
+	font-size:14px;
+	text-align: center;
+	background:transparent url(../tengxunimages/plats1.png) no-repeat 0 0;
+
+}
+.plats a:first-of-type{
+	width:80px;
+	margin-right:35px;
+}
+.plats a:nth-child(3){
+	/*color:green;*/
+	width:80px;
+	margin-right: 30px;
+	background-position:-105px 0;
+}
+.plats a:nth-child(4){
+	/*color:green;*/
+	width:86px;
+	margin-right:30px;
+	background-position:-210px 0;
+}
+.plats a:nth-child(5){
+	/*color:green;*/
+	width:74px;
+	background-position:-326px 0;
+}
+.map{
+	float:left;
+	width:185px;
+}
+.map dl,.map dd,.map dt{
+	margin:0;
+}
+.map dd{
+	line-height: 22px;
+}
+.map:nth-child(4){
+	    width: 70px;
+}
+.map dd a{
+	color:#979797;
+}
+.copyright{
+	    line-height: 17px;
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 16px;
+	border-top:1px solid #666;
+}
+.copyright p{
+	margin:0;
+	text-align: center;
+}
