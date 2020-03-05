@@ -182,7 +182,8 @@ body{
 	/*设置背景图片自适应*/
 	/*background-position: center 0;*/
 	/*position: relative;*/
-	background:url(../tengxunimages/fisrtbg.jpg) no-repeat;
+	background-image:url(../tengxunimages/fisrtbg.jpg);
+	background-repeat:no-repeat;
 }
 .qcall{
 	width:100%;
